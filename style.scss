@@ -12,13 +12,13 @@ $paddings: 1rem;
   text-decoration: none;
 }
 
-/* darle altura y ancho en cointainer*/
+/* darle altura y ancho en container */
 .ancho-cv {
   display: flex;
   height: 100vh;
   justify-content: center;
   margin: auto;
-  /*width: 80%;*/
+  /* width: 80%; */
 }
 
 a {
@@ -47,20 +47,13 @@ img {
 
 .acomodando-contactos {
   display: grid;
+  gap: 0.5rem; /* Agregado: separación entre los íconos y el texto */
+  margin-top: 1rem; /* Agregado: margen superior para separar del borde superior */
 }
 
-.contacts__altura {
-  padding: $paddings;
-}
-
-.skills__altura {
-  padding: $paddings;
-}
-
-.languages__altura {
-  padding: $paddings;
-}
-
+.contacts__altura,
+.skills__altura,
+.languages__altura,
 .informacion__altura {
   padding: $paddings;
 }
@@ -85,5 +78,8 @@ img {
 }
 
 .button__works {
-  color: #638dff;
+  color: $titulo;
+}
+ul {
+  padding: 0;
 }
